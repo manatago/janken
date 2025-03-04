@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんゲーム</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>じゃんけんゲーム</h1>
+        
+        <!-- プレイヤー情報 -->
+        <div class="player-info">
+            <h2>あなたの名前: <span id="playerName"></span></h2>
+            <p>ルーム: <span id="roomName"></span></p>
+        </div>
+
+        <!-- じゃんけんの手の選択 -->
+        <div id="choiceSection" class="choice-section">
+            <h2>じゃんけんの手を選んでください</h2>
+            <div class="choices">
+                <button class="choice-btn" data-choice="グー">
+                    ✊ グー
+                </button>
+                <button class="choice-btn" data-choice="チョキ">
+                    ✌️ チョキ
+                </button>
+                <button class="choice-btn" data-choice="パー">
+                    ✋ パー
+                </button>
+            </div>
+        </div>
+
+        <!-- 待機画面 -->
+        <div id="waitingSection" class="waiting-section" style="display: none;">
+            <h2>他のプレイヤーの選択を待っています...</h2>
+            <div class="players-status">
+                <h3>参加者の状態:</h3>
+                <ul id="playersList"></ul>
+            </div>
+        </div>
+
+        <!-- 結果表示 -->
+        <div id="resultSection" class="result-section" style="display: none;">
+            <h2>結果発表</h2>
+            <div id="resultContent"></div>
+            <button id="playAgainBtn" class="play-again-btn">もう一度遊ぶ</button>
+        </div>
+    </div>
+    <script src="./js/game.js"></script>
+</body>
+</html>

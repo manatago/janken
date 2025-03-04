@@ -1,0 +1,16 @@
+# 基本設定
+Options -Indexes
+
+# エラーページ
+ErrorDocument 404 /janken/404.php
+ErrorDocument 403 /janken/404.php
+ErrorDocument 500 /janken/404.php
+
+# 設定ファイルへのアクセスを拒否
+<Files ~ "^(\.env|config\.php|\.htaccess)$">
+    Order deny,allow
+    Deny from all
+</Files>
+
+# roomsディレクトリへのアクセスを拒否
+RedirectMatch 403 ^/janken/rooms/

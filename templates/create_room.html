@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんゲーム - ルーム作成</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>じゃんけんゲーム ルーム作成</h1>
+        <div class="room-creation-form">
+            <h2>新しいルームを作成</h2>
+            <form id="roomForm">
+                <input type="text" id="roomName" required placeholder="ルーム名">
+                <button type="submit">ルームを作成</button>
+            </form>
+        </div>
+
+        <div id="roomUrlDisplay" class="room-url-display" style="display: none;">
+            <h3>ルームが作成されました</h3>
+            <p>以下のURLを生徒に共有してください：</p>
+            <div class="url-box">
+                <input type="text" id="roomUrl" readonly>
+                <button id="copyUrl">URLをコピー</button>
+            </div>
+            <div class="info-text">
+                <p>※このURLを生徒に共有してください</p>
+                <p>※新しいルームを作成する場合は、ページを更新してください</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/create_room.js"></script>
+</body>
+</html>

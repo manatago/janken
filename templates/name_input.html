@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんゲーム - 名前入力</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>じゃんけんゲーム</h1>
+        <div class="name-input-form">
+            <h2>名前を入力してください</h2>
+            <form id="nameForm">
+                <input type="text" id="playerName" required placeholder="あなたの名前">
+                <button type="submit">参加する</button>
+            </form>
+            <div class="info-text">
+                <p>※他の参加者と同じ名前は使用できません</p>
+                <p>※一度入力した名前は自動的に記憶されます</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/name_input.js"></script>
+</body>
+</html>

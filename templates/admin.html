@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんゲーム - 管理者画面</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>じゃんけんゲーム 管理者画面</h1>
+        <div class="admin-form">
+            <h2>管理者として名前を入力してください</h2>
+            <form id="adminNameForm">
+                <input type="text" id="adminName" required placeholder="管理者名">
+                <button type="submit">ログイン</button>
+            </form>
+            <div class="info-text">
+                <p>※この画面は管理者専用です</p>
+                <p>※入力後、ルーム作成画面に移動します</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/admin.js"></script>
+</body>
+</html>
